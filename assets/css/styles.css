@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'The Youngest Script';
-  src: url('../assets/fonts/the-youngest-script.ttf') format('truetype');
+  src: url('../../images/assets/fonts/the-youngest-script.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -10994,7 +10994,7 @@ header.masthead {
   align-items: center;       /* Ortalar */
   text-align: center;
   color: #fff;
-  background-image: url("../assets/img/header-bg.jpg");
+  background-image: url("../../images/assets/img/header-bg.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -11336,7 +11336,7 @@ header.masthead .container {
 
 section#contact {
   background-color: #212529;
-  background-image: url("../assets/img/map-image.png");
+  background-image: url("../../images/assets/img/map-image.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -11436,7 +11436,7 @@ section#contact form#contactForm :-ms-input-placeholder {
     padding-bottom: 5rem;
     text-align: center;
     color: #fff;
-    background-image: url("../assets/img/header-bg.jpg");
+    background-image: url("../../images/assets/img/header-bg.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
