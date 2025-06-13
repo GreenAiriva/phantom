@@ -1,22 +1,30 @@
-/* YALNIZCA #main SECTION'U İÇİN KAPSÜLLENMİŞ VE YÜKSEK ÖZGÜLLÜKTE CSS */
-/* Diğer tüm styles.css kurallarını override eder, SADECE #main bölümünü etkiler. */
-
-#main,
-#main * {
-  all: unset;
-  box-sizing: border-box;
-  /* Temel sıfırlama. Sadece #main ve altındaki elemanlara etki eder. */
-  /* İstersen 'all: revert' da kullanabilirsin ama çoğu tarayıcıda 'all: unset' daha keskin bir reset sağlar. */
+/* Phantom Main Section Override Protection */
+#wrapper #main,
+#wrapper #main .inner,
+#wrapper #main .tiles,
+#wrapper #main .tiles article,
+#wrapper #main .tiles .image,
+#wrapper #main .tiles .content,
+#wrapper #main .tiles h2,
+#wrapper #main h1,
+#wrapper #main p {
+  box-sizing: border-box !important;
+  font-family: 'Montserrat', 'Roboto Slab', Arial, Helvetica, sans-serif !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  color: inherit;
+  background: none;
 }
 
-#main {
+/* Daha özgül stiller aşağıda devam ediyor: */
+
+#wrapper #main {
   display: block;
   padding: 4em 0 2em 0;
   background: #f8f8f8;
-  box-sizing: border-box;
 }
 
-#main .inner {
+#wrapper #main .inner {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
@@ -24,29 +32,27 @@
   display: block;
 }
 
-#main header {
+#wrapper #main header {
   text-align: center;
   margin-bottom: 3em;
   display: block;
 }
 
-#main h1 {
+#wrapper #main h1 {
   font-size: 2.5em !important;
   font-weight: 700 !important;
   margin-bottom: 0.5em !important;
   line-height: 1.2 !important;
   color: #222 !important;
-  display: block;
 }
 
-#main p {
+#wrapper #main p {
   color: #666 !important;
   font-size: 1.15em !important;
   margin-bottom: 0 !important;
-  display: block;
 }
 
-#main .tiles {
+#wrapper #main .tiles {
   display: grid !important;
   grid-template-columns: repeat(3, 1fr) !important;
   gap: 2em !important;
@@ -56,19 +62,19 @@
 }
 
 @media screen and (max-width: 980px) {
-  #main .tiles {
+  #wrapper #main .tiles {
     grid-template-columns: repeat(2, 1fr) !important;
   }
 }
 
 @media screen and (max-width: 736px) {
-  #main .tiles {
+  #wrapper #main .tiles {
     grid-template-columns: 1fr !important;
     gap: 1em !important;
   }
 }
 
-#main .tiles article {
+#wrapper #main .tiles article {
   background: #fff !important;
   border-radius: 6px !important;
   box-shadow: 0 2px 12px rgba(0,0,0,0.05) !important;
@@ -80,18 +86,18 @@
   margin: 0 !important;
 }
 
-#main .tiles article:hover {
+#wrapper #main .tiles article:hover {
   box-shadow: 0 6px 24px rgba(0,0,0,0.12) !important;
 }
 
-#main .style1 { background: #f5f5f5 !important; }
-#main .style2 { background: #f0f0f0 !important; }
-#main .style3 { background: #eaeaea !important; }
-#main .style4 { background: #e0e0e0 !important; }
-#main .style5 { background: #d8d8d8 !important; }
-#main .style6 { background: #d0d0d0 !important; }
+#wrapper #main .style1 { background: #f5f5f5 !important; }
+#wrapper #main .style2 { background: #f0f0f0 !important; }
+#wrapper #main .style3 { background: #eaeaea !important; }
+#wrapper #main .style4 { background: #e0e0e0 !important; }
+#wrapper #main .style5 { background: #d8d8d8 !important; }
+#wrapper #main .style6 { background: #d0d0d0 !important; }
 
-#main .tiles .image {
+#wrapper #main .tiles .image {
   width: 100% !important;
   height: 200px !important;
   overflow: hidden !important;
@@ -101,7 +107,7 @@
   padding: 0 !important;
 }
 
-#main .tiles .image img {
+#wrapper #main .tiles .image img {
   width: 100% !important;
   height: 100% !important;
   object-fit: cover !important;
@@ -111,7 +117,7 @@
   padding: 0 !important;
 }
 
-#main .tiles h2 {
+#wrapper #main .tiles h2 {
   font-size: 1.3em !important;
   margin: 1em 0 0.5em 0 !important;
   font-weight: 700 !important;
@@ -119,10 +125,9 @@
   letter-spacing: 0.07em !important;
   text-align: center !important;
   color: #222 !important;
-  display: block !important;
 }
 
-#main .tiles .content {
+#wrapper #main .tiles .content {
   padding: 1.25em !important;
   flex: 1 1 auto !important;
   display: flex !important;
@@ -132,7 +137,7 @@
   background: none !important;
 }
 
-#main .tiles article > a {
+#wrapper #main .tiles article > a {
   color: inherit !important;
   text-decoration: none !important;
   display: block !important;
@@ -142,18 +147,18 @@
   border: none !important;
 }
 
-#main .tiles article > a:hover h2 {
+#wrapper #main .tiles article > a:hover h2 {
   color: #f2849e !important;
 }
 
 @media screen and (max-width: 736px) {
-  #main {
+  #wrapper #main {
     padding: 2em 0 1em 0 !important;
   }
-  #main .inner {
+  #wrapper #main .inner {
     padding: 1em 0 !important;
   }
-  #main h1 {
+  #wrapper #main h1 {
     font-size: 1.5em !important;
   }
 }
