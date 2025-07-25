@@ -1,1 +1,52 @@
-asda
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+  <div class="container">
+    <!-- Logo (mutlak path ile) -->
+    <a class="navbar-brand" href="/"><img src="/assets/img/navbar-logo.svg" alt="GreenAiriva logo" /></a>
+
+    <!-- Hamburger icon (mobilde açılır menu) -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+      aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu <i class="fas fa-bars ms-1"></i>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+
+        <!-- Solutions (EN) -->
+        <li class="nav-item">
+          <a class="nav-link" href="/solutions/">Solutions</a>
+        </li>
+
+        <!-- About (EN) -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" data-bs-toggle="dropdown"
+            aria-expanded="false">About</a>
+          <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="aboutDropdown">
+            <li><a class="dropdown-item custom-dropdown-item" href="/about/#about">About Us</a></li>
+            <li><a class="dropdown-item custom-dropdown-item" href="/about/#vision">Vision</a></li>
+            <li><a class="dropdown-item custom-dropdown-item" href="/about/#mission">Mission</a></li>
+            <li><a class="dropdown-item custom-dropdown-item" href="/about/#whyus">Why GreenAiriva?</a></li>
+            <li><a class="dropdown-item custom-dropdown-item" href="/about/#contribution">Social & Environmental</a></li>
+            <li><a class="dropdown-item custom-dropdown-item" href="/about/#team">Our Team</a></li>
+            <li><a class="dropdown-item custom-dropdown-item" href="/about/#join">Join Us</a></li>
+          </ul>
+        </li>
+
+        <!-- Blog -->
+        <li class="nav-item">
+          <a class="nav-link" href="/blog/">Blog</a>
+        </li>
+
+        <!-- Contact (page içi anchor - EN anasayfa veya EN contact içeren sayfalarda çalışır) -->
+        <li class="nav-item">
+          <a class="nav-link" id="scrollToContact" href="/#contact">Contact</a>
+        </li>
+
+        <!-- Language Switch (TR'ye geçiş: bulunduğu klasörde tr/index.html varsa oraya yönlendirir) -->
+        <li class="nav-item">
+          <a class="lang-switch nav-link" href="#" onclick="switchToTR()">TR</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
