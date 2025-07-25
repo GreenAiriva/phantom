@@ -1,0 +1,82 @@
+C:\USERS\ZUHTU\ONEDRIVE\DESKTOP\GREENAIRIVA.COM.TR-MAIN
+│   CNAME
+│   index.html
+│   README.md
+│   TREE.txt
+│
+├───about
+│   │   index_about.html
+│   │
+│   └───tr
+│           index_about_tr.html
+│
+├───assets
+│   │   favicon.ico
+│   │   favicon.svg
+│   │
+│   ├───fonts
+│   │       the-youngest-script.ttf
+│   │
+│   └───img
+│       │   close-icon.svg
+│       │   GreenAiriva_navbar-logo.svg
+│       │   header-bg.jpg
+│       │   map-image.png
+│       │   navbar-logo.svg
+│       │
+│       ├───about
+│       │       1.jpg
+│       │       2.jpg
+│       │       3.jpg
+│       │       4.jpg
+│       │       Adsız tasarım (1).png
+│       │       Adsız tasarım (2).png
+│       │       Adsız tasarım (3).png
+│       │       Adsız tasarım (4).png
+│       │       facebook.svg
+│       │       google.svg
+│       │       ibm.svg
+│       │       microsoft.svg
+│       │
+│       ├───blog
+│       │       1.jpg
+│       │       2.jpg.png
+│       │       3.jpg
+│       │       4.jpg
+│       │       5.jpg
+│       │       6.jpg
+│       │
+│       ├───logos
+│       │       facebook.svg
+│       │       google.svg
+│       │       ibm.svg
+│       │       icons8-instagram-500.svg
+│       │       icons8-linkedin-500.svg
+│       │       icons8-x-500.svg
+│       │       microsoft.svg
+│       │
+│       ├───Solution
+│       │       SDG-11.jpg
+│       │       SDG-13.jpg
+│       │       SDG-3.jpg
+│       │
+│       └───team
+│               1.jpg
+│               2.jpg
+│               3.jpg
+│
+├───css
+│       styles.css
+│
+├───js
+│       scripts.js
+│
+├───solutions
+│   │   index_solutions.html
+│   │
+│   └───tr
+│           index_solutions_tr.html
+│
+└───tr
+        index_tr.html
+
