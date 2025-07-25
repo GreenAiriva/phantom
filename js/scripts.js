@@ -108,3 +108,55 @@ document.querySelectorAll('.navbar-nav .nav-link, .navbar-nav .dropdown-item').f
     }
   });
 });
+
+/**
+ * Dil geçişi fonksiyonları (Lang Switch) - GreenAiriva Çok Dilli Statik Site
+ * Tüm EN ve TR sayfalarında çalışır. Navbar'daki "TR" ve "EN" butonlarında kullanılır.
+ * Yazan: ChatGPT / 2025
+ */
+
+/**
+ * Kullanıcı İngilizce bir sayfadayken TR'ye geçmek isterse,
+ * bulunduğu klasörde "tr/index.html" var mıysa oraya yönlendirir.
+ */
+function switchToTR() {
+  // Mevcut sayfanın yolunu al (örn: /about/index.html)
+  var path = window.location.pathname;
+
+  // Eğer yol / ile bitiyorsa (örn: /about/), index.html ekle
+  if (path.endsWith('/')) path += 'index.html';
+
+  // Eğer zaten /tr/ içindeyse bir daha yönlendirme!
+  if (!path.includes('/tr/')) {
+    // /index.html'i /tr/index.html'e çevir
+    var newPath = path.replace(/\/index\.html$/, '/tr/index.html');
+    // Kullanıcıyı yeni yola yönlendir
+    window.location.href = newPath;
+  }
+}
+
+/**
+ * Kullanıcı Türkçe bir sayfadayken EN'ye geçmek isterse,
+ * bulunduğu klasörde bir üstteki "index.html"e yönlendirir.
+ */
+function switchToEN() {
+  var path = window.location.pathname;
+
+  // Eğer /tr/index.html içindeyse, /index.html'e çevir
+  if (path.includes('/tr/index.html')) {
+    var newPath = path.replace('/tr/index.html', '/index.html');
+    window.location.href = newPath;
+  }
+  // Eğer yol /tr/ ile bitiyorsa (örn: /about/tr/), /about/index.html'e çevir
+  else if (path.endsWith('/tr/')) {
+    var newPath = path.replace('/tr/', '/');
+    if (!newPath.endsWith('/')) newPath += '/';
+    newPath += 'index.html';
+    window.location.href = newPath;
+  }
+  // Eğer başka bir TR varyasyonu yoksa, ana EN ana sayfaya git
+  else {
+    window.location.href = '/index.html';
+  }
+}
+
